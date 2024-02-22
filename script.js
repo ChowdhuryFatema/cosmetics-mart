@@ -2,30 +2,40 @@
 let titleCount = 1;
 let totalPrice = 0;
 let count = 0;
+let isSelected = false;
+const cardsBtn = document.querySelectorAll('.card .btn');
 
-const cards = document.getElementsByClassName('card');
-for(let card of cards){
-    card.addEventListener('click', function(){
+for(let cardBtn of cardsBtn){
+    cardBtn.addEventListener('click', function(e){
+        if( isSelected === false){
+            e.target.setAttribute("disabled", true);
+        }
+        else{
+            e.target.setAttribute("disabled", "");
+        }
+        
         // product count 
         count++
         const productCount = document.getElementById('product-count');
         productCount.innerText = count;
 
         // get the title and price value 
-        const title = card.querySelector('h3').innerText;
-        const priceText = card.querySelector('span').innerText.split(' ')[1];
+        const title = cardBtn.parentNode.childNodes[3].childNodes[3].innerText;
+        const priceText = cardBtn.parentNode.childNodes[3].childNodes[5].innerText.split(' ')[1];
         const price = parseFloat(priceText);
-
+        
         // appending title in the title container 
         const titleContainer = document.getElementById('title-container');
         const p = document.createElement('p');
         p.innerText = titleCount + '. ' + title;
         titleContainer.appendChild(p);
         titleCount++
-
+        
         // calculate price 
         totalPrice += price;
         document.getElementById('totalPrice').innerText = totalPrice.toFixed(2);
+        
+        
 
     })
     

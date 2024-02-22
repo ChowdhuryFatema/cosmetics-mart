@@ -15,7 +15,7 @@
   <!-- header starts here  -->
   <header class="container mx-auto px-5 md:px-24">
     <div class="navbar py-5">
-      <div class="navbar-start">
+      <div class="lg:navbar-start">
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -30,9 +30,9 @@
             <li><a>Search</a></li>
           </ul>
         </div>
-        <h2 class="text-xl md:text-3xl font-bold">Cosmetics <span class="text-[#e4826a]">M</span>art</h2>
+        <h2 class="text-2xl md:text-3xl font-bold">Cosmetics <span class="text-[#e4826a]">M</span>art</h2>
       </div>
-      <div class="navbar-center hidden lg:flex">
+      <div class="navbar-center hidden ml-auto lg:flex">
         <ul class="menu menu-horizontal *:text-lg px-1">
           <li><a class="hover:bg-[#e4826a] duration-500 hover:text-white">Home</a></li>
           <li><a class="hover:bg-[#e4826a] duration-500 hover:text-white">About</a></li>
@@ -40,7 +40,7 @@
           <li><a class="hover:bg-[#e4826a] duration-500 hover:text-white">Search</a></li>
         </ul>
       </div>
-      <div class="navbar-end">
+      <div class="lg:navbar-end ml-auto">
         <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
           <div class="indicator">
             <svg xmlns="http://www.w3.org/2000/svg" class="size-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
@@ -57,7 +57,7 @@
       <div class="md:px-20 px-5">
         <div class="mb-6 md:mb-0 md:mr-12">
           <h4 class="text-xl font-semibold">---SALE FEVER---</h4>
-          <h3 class="text-3xl md:text-5xl my-12 font-bold">
+          <h3 class="text-5xl my-12 font-bold">
             Purchase $ 200 or <br />
             above & get <span class="text-orange-500">20% off</span>
           </h3>
@@ -80,7 +80,7 @@
           <div>
             <h2 class="text-4xl font-bold ml-4 py-10">New Arrivals</h2>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center justify-center">
-              <div class="text-center card hover:shadow-xl duration-500 bg-white py-4 rounded-md">
+              <div class="text-center card hover:shadow-xl duration-500 bg-white pt-4 rounded-md">
                 <img class="mx-auto" src="Images/product1.jpg" alt="" />
                 <div class="py-4">
                   <div class="rating text-center">
@@ -91,44 +91,47 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   </div>
                   <h3 class="text-2xl font-bold">Surreal Skin Foundation</h3>
-                  <span class="text-slate-500">$ 39.00</span>
+                  <span class="text-slate-500">$ 39.00</span>              
                 </div>
+                <button class="btn text-lg w-full btn btn-wide hover:bg-[#e69581] bg-[#e4826a] text-white">Add to cart</button>
               </div>
-              <div class="text-center card hover:shadow-xl duration-500 bg-white py-3 rounded-md">
-                <img class="mx-auto" src="Images/product2.jpg" alt="" />
-                <div class="py-4">
-                  <div class="rating text-center">
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <div class="text-center card hover:shadow-xl duration-500 bg-white pt-3 rounded-md">
+                  <img class="mx-auto" src="Images/product2.jpg" alt="" />
+                  <div class="py-4">
+                    <div class="rating text-center">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <h3 class="text-2xl font-bold">White Pen Kajals</h3>
+                    <span class="text-slate-500">$ 24.00</span>
                   </div>
-                  <h3 class="text-2xl font-bold">White Pen Kajals</h3>
-                  <span class="text-slate-500">$ 24.00</span>
+                  <button class="btn w-full btn btn-wide hover:bg-[#e69581] text-lg bg-[#e4826a] text-white">Add to cart</button>
                 </div>
-              </div>
-              <div class="text-center card hover:shadow-xl duration-500 bg-white px-2 py-4 rounded-md">
-                <img class="mx-auto" src="Images/product3.jpg" alt="" />
-                <div class="py-4">
-                  <div class="rating text-center">
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <div class="text-center card hover:shadow-xl duration-500 bg-white pt-4 rounded-md">
+                  <img class="mx-auto" src="Images/product3.jpg" alt="" />
+                  <div class="py-4">
+                    <div class="rating text-center">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <h3 class="text-2xl font-bold">Lip Tint Combo</h3>
+                    <span class="text-slate-500">$ 99.00</span>
                   </div>
-                  <h3 class="text-2xl font-bold">Lip Tint Combo</h3>
-                  <span class="text-slate-500">$ 99.00</span>
+                  <button class="btn w-full btn btn-wide hover:bg-[#e69581] text-lg bg-[#e4826a] text-white">Add to cart</button>
                 </div>
-              </div>
             </div>
           </div>
           <!-- start Best Selling -->
           <div>
             <h2 class="text-4xl py-12 ml-4 text-black font-bold">Best Selling</h2>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center justify-center">
-              <div class="text-center card hover:shadow-xl duration-500 bg-white py-4 rounded-md">
+              <div class="text-center card hover:shadow-xl duration-500 bg-white pt-4 rounded-md">
                 <img class="mx-auto" src="Images/product5.jpg" alt="" />
                 <div class="py-4">
                   <div class="rating text-center">
@@ -141,8 +144,9 @@
                   <h3 class="text-2xl font-bold">Nail Polish Set</h3>
                   <span class="text-slate-500">$ 49.00</span>
                 </div>
+                <button class="btn w-full btn btn-wide hover:bg-[#e69581] text-lg bg-[#e4826a] text-white">Add to cart</button>
               </div>
-              <div class="text-center card hover:shadow-xl duration-500 bg-white py-4 rounded-md">
+              <div class="text-center card hover:shadow-xl duration-500 bg-white pt-4 rounded-md">
                 <img class="mx-auto" src="Images/product4.jpg" alt="" />
                 <div class="py-4">
                   <div class="rating text-center">
@@ -155,8 +159,9 @@
                   <h3 class="text-2xl font-bold">Eyeshadow Palette</h3>
                   <span class="text-slate-500">$ 149.00</span>
                 </div>
+                <button class="btn w-full btn btn-wide hover:bg-[#e69581] text-lg bg-[#e4826a] text-white">Add to cart</button>
               </div>
-              <div class="text-center card hover:shadow-xl duration-500 bg-white px-2 py-4 rounded-md">
+              <div class="text-center card hover:shadow-xl duration-500 bg-white pt-4 rounded-md">
                 <img class="mx-auto" src="Images/product6.jpg" alt="" />
                 <div class="py-4">
                   <div class="rating text-center">
@@ -169,6 +174,7 @@
                   <h3 class="text-2xl font-bold">Liquid Matte Lipstick</h3>
                   <span class="text-slate-500">$ 69.00</span>
                 </div>
+                <button class="btn w-full btn btn-wide hover:bg-[#e69581] text-lg bg-[#e4826a] text-white">Add to cart</button>
               </div>
             </div>
           </div>
@@ -176,7 +182,7 @@
           <div>
             <h2 class="text-4xl font-bold py-12 ml-4">Best Items</h2>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center justify-center">
-              <div class="text-center card hover:shadow-xl duration-500 bg-white py-3 rounded-md">
+              <div class="text-center card hover:shadow-xl duration-500 bg-white pt-3 rounded-md">
                 <img class="mx-auto" src="Images/product8.jpg" alt="" />
                 <div class="py-4">
                   <div class="rating text-center">
@@ -189,8 +195,9 @@
                   <h3 class="text-2xl font-bold">Natural Fake Nails</h3>
                   <span class="text-slate-500">$ 185.00</span>
                 </div>
+                <button class="btn w-full btn btn-wide hover:bg-[#e69581] text-lg bg-[#e4826a] text-white">Add to cart</button>
               </div>
-              <div class="text-center card hover:shadow-xl duration-500 bg-white py-4 rounded-md">
+              <div class="text-center card hover:shadow-xl duration-500 bg-white pt-4 rounded-md">
                 <img class="mx-auto" src="Images/product7.jpg" alt="" />
                 <div class="py-4">
                   <div class="rating text-center">
@@ -203,8 +210,9 @@
                   <h3 class="text-2xl font-bold">Liquid Cream Blush</h3>
                   <span class="text-slate-500">$ 299.00</span>
                 </div>
+                <button class="btn w-full btn btn-wide hover:bg-[#e69581] text-lg bg-[#e4826a] text-white">Add to cart</button>
               </div>
-              <div class="text-center card hover:shadow-xl duration-500 bg-white py-4 rounded-md">
+              <div class="text-center card hover:shadow-xl duration-500 bg-white pt-4 rounded-md">
                 <img class="mx-auto" src="Images/product9.jpg" alt="" />
                 <div class="py-4">
                   <div class="rating text-center">
@@ -217,6 +225,7 @@
                   <h3 class="text-2xl font-bold">Talc Powder Gold</h3>
                   <span class="text-slate-500">$ 399.00</span>
                 </div>
+                <button class="btn w-full btn btn-wide hover:bg-[#e69581] text-lg bg-[#e4826a] text-white">Add to cart</button>
               </div>
             </div>
           </div>
