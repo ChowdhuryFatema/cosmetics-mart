@@ -1,10 +1,15 @@
 
 let titleCount = 1;
 let totalPrice = 0;
+let count = 0;
 
 const cards = document.getElementsByClassName('card');
 for(let card of cards){
     card.addEventListener('click', function(){
+        // product count 
+        count++
+        const productCount = document.getElementById('product-count');
+        productCount.innerText = count;
 
         // get the title and price value 
         const title = card.querySelector('h3').innerText;
@@ -58,5 +63,8 @@ applyBtn.addEventListener('click', function(){
     alert('Must Purchase over $200 for discount!');
     document.getElementById('input-field').value = '';
    }
-     
+
 })
+
+
+
